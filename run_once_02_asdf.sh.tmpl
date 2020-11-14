@@ -1,0 +1,17 @@
+#!/bin/fish
+
+# python 
+asdf plugin-add python
+asdf install python 3.8.6
+asdf global python 3.8.6
+
+# nodejs
+asdf plugin-add nodejs
+bash -c '${ASDF_DATA_DIR:=$HOME/.asdf}/plugins/nodejs/bin/import-release-team-keyring'
+asdf install nodejs 10.22.1
+asdf global nodejs 10.22.1
+
+## globals
+npm install -g yarn
+pip install neovim
+pip install neovim-remote

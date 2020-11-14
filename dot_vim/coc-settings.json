@@ -1,0 +1,35 @@
+{
+  "diagnostic.signOffset": 9999999,
+  "typescript.showUnused": true,
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.updateImportsOnFileMove.enable": true,
+  "python.jediEnabled": false,
+  "python.linting.pep8Path": "/home/mingxiangchan/.cache/pypoetry/virtualenvs/bi-wMrdgqz8-py3.7/bin/pep8",
+  "python.poetryPath": "/home/mingxiangchan/.poetry/bin/poetry",
+  "python.venvFolders": [
+    "~/.cache/pypoetry/virtualenvs"
+  ],
+  "python.venvPath": "~/.cache/pypoetry/virtualenvs",
+  "intelephense.environment.phpVersion": "7.0.0",
+  "intelephense.format.enable": false,
+  "eslint.autoFixOnSave": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "Markdown",
+    "json",
+    "typescript",
+    "typescript.tsx",
+    "html",
+    "typescriptreact",
+    "elixir"
+  ],
+  "languageserver": {
+    "elixirLS": {
+      "command": "/home/mingxiangchan/Desktop/utils/elixir-ls/rel/language_server.sh",
+      "filetypes": [
+        "elixir",
+        "eelixir"
+      ]
+    }
+  }
+}

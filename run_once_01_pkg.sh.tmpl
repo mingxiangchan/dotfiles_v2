@@ -1,0 +1,27 @@
+{{ if eq .chezmoi.os "linux" -}}
+#! /bin/sh
+sudo pacman -Syy
+yes | sudo pacman -S ripgrep
+yes | sudo pacman -S fzf
+yes | sudo pacman -S neovim
+yes | sudo pacman -S alacritty
+yes | sudo pacman -S ranger
+yes | sudo pacman -S docker
+yes | sudo pacman -S docker-compose
+yes | sudo pacman -S fish
+yes | sudo pacman -S ctags
+yes | sudo pacman -S abduco
+
+
+mkdir ~/wiki
+mkdir -p ~/.local/share/nvim/backup
+
+git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.8.0
+
+sudo chsh $USER -s /bin/fish
+sudo usermod -aG docker $USER
+sudo systemctl enable docker
+
+{{ else if eq .chezmoi.os "darwin" -}}
+brew install ripgrep
+{{ end -}}
